@@ -1,0 +1,30 @@
+﻿@model MvcApplication1.ViewModel.EmployeeListViewModel
+@using MvcApplication1.ViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetView</title>
+</head>
+<body>
+    <div>
+        @foreach(EmployeeViewModel item in Model.employees)
+        {
+            }
+        <b> Employee Details </b> <br />
+        Employee Name := @Model.EmployeeName <br />
+
+            <span style="background-color:@Model.SalaryColor">
+                 Employee Salary := @Model.Salary.ToString("C")
+             </span>
+       
+        
+    </div>
+</body>
+</html>
